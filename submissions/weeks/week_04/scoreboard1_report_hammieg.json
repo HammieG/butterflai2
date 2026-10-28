@@ -1,0 +1,101 @@
+{
+ "student": "HammieG",
+ "variant": "width-amplitude",
+ "kind": "ablation",
+ "question": "Does belt width grow with cycle amplitude on held-out cycles?",
+ "spec": {
+  "shape": "gamma",
+  "pooling": "shared",
+  "drift": "exponential",
+  "profile": "gaussian",
+  "width": "amplitude",
+  "gate": "none",
+  "emission": "threshold"
+ },
+ "fitted_parameters": 25,
+ "held_out_nll_per_hemicycle_year": -26.139931882612927,
+ "between_hemicycle_spread": 18.204332138233912,
+ "paired_vs_baseline": {
+  "mean": -0.6948768304342964,
+  "se": 0.28740556209545887,
+  "median": -0.2537610490140185,
+  "better": 15,
+  "of": 18,
+  "n": 18
+ },
+ "ks_median": 0.04313275934275489,
+ "ks_not_rejected": 9,
+ "plausibility": [
+  {
+   "hemicycle": "23N",
+   "predicted": 908.9768771555233,
+   "observed": 927,
+   "centroid_model": 15.064782729733261,
+   "centroid_obs": 15.746084142394821,
+   "spread_model": 7.094838383440499,
+   "spread_obs": 7.346041730789695
+  },
+  {
+   "hemicycle": "23S",
+   "predicted": 1039.8221101709335,
+   "observed": 1108,
+   "centroid_model": 15.15669202367255,
+   "centroid_obs": 15.390911552346571,
+   "spread_model": 7.296566666135166,
+   "spread_obs": 7.694608571225645
+  }
+ ],
+ "count_error_percent": 4.048740550396687,
+ "protocol": {
+  "held_out_unit_contributed": [
+   "its own events to estimate the clock shift, with drift timescale fitted on the training fold",
+   "the independent area record through the training fold amplitude map",
+   "training fold only for shared shape and stage parameters"
+  ],
+  "interpretation": "conditional shape-transfer score, not an operational timing forecast"
+ },
+ "fingerprint": {
+  "recipe": {
+   "mesh": [
+    201,
+    241
+   ],
+   "domain": [
+    0.0,
+    60.0
+   ],
+   "window": [
+    -6.0,
+    11.0
+   ],
+   "folds": [
+    12,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    21,
+    23
+   ],
+   "withheld": [
+    16,
+    20,
+    22
+   ],
+   "analysis_set": [
+    12,
+    23,
+    30.0
+   ],
+   "gauge": [
+    1.0,
+    1.0,
+    15.0
+   ],
+   "headline_amplitude": "area record"
+  },
+  "digest": "5e55384fbc54"
+ }
+}
