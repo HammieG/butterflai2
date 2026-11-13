@@ -18,4 +18,4 @@ A neural latent-belt model compared against the Week 4 champion on the shared le
 
 ## Notebook
 
-_Released at the start of the week._ Task numbering continues from the previous week.
+The submission notebook implements Tasks 44–55 and records a retrospective prediction record. It was executed in Google Colab on the CPU taste profile (four north wings, two folds); this is provisional and not comparable with a full T4 run. Task numbering continues from the previous week.
