@@ -1,6 +1,6 @@
 # Week 6 validation and provenance
 
-Execution completed in Google Colab and the saved notebook was downloaded for validation. All 81 code cells executed with no error outputs. Figures and printed results are preserved; a final markdown execution review was added afterward.
+The main artifact is now the full T4 GPU run, downloaded from the saved Drive notebook and validated. It has 81 code cells and 14 figures; execution reached the final cell without error outputs. Drive's export omitted numeric Jupyter execution counters, so those remain unset rather than reconstructed. Successful cell metadata, dependent results, visible completion and preserved outputs document execution. Two markdown cells were appended after execution: full-run review and corrected student reflections. Colab's per-cell user name and account identifier were removed from metadata before publication.
 
 ## Inputs and authorship
 
@@ -24,7 +24,7 @@ No issues were found in the fork or mentioning HammieG in the official repositor
 
 ## Scope
 
-The executed artifact has 102 original-plus-prediction cells; the final review brings the submission to 103 cells. All code cells pass Python AST parsing and the notebook passes nbformat schema validation. Numerical and scientific figures were inspected for the paired scoreboard and held-out generation. JSON and source validation are repeated against the published artifact after upload.
+The full executed artifact has 102 original-plus-prediction cells; the final review and student reflections bring the submission to 104 cells. All code cells pass Python AST parsing and the notebook passes nbformat schema validation. Numerical and scientific figures are inspected for the paired scoreboard and held-out generation. Published content is checked against the local file using Git's blob hash after upload.
 
 The supplied `Model.n_params` counts amplitudes using all `FIT_WINGS`: on taste this is 10 shared champion shape parameters, four amplitudes, and one global scale, totaling 15. Each held-out fold actually trains on three wings, so its fitted base has 14 parameters; the printed model-family count is one larger. Adding the history channels increases the printed count by the active channel count. This reporting convention is distinct from the earlier Week 4 missing-shape-parameter failure. The supplied fit explicitly updates and stores its training amplitudes.
 

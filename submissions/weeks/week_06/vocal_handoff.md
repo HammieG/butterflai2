@@ -40,9 +40,17 @@ domain: machine learning | level: not fully calibrated | milestone: not assessed
 
 ## Remaining student reflection
 
-After reviewing the computed results, the student should explain which predictions held, what changed their reasoning, how timestamp ties affect the short channels, which missing measurement would most help, and what the evidence can actually support. Those responses have not been invented on the student's behalf.
+The student supplied CPU reflections after reading an assistant draft; corrected responses are in student_reflections.md. They explain why a gain below the uncertainty floor is unresolved, identify shared cause and triggering as alternatives, and describe surprise at the self-inclusion leak. The missing-longitude mechanism remains a tutor clarification rather than a claim of independently deployed reasoning. Other deeper tutor questions remain useful learning follow-ups, not fabricated responses.
 
-## Executed results — assistant analysis for student review
+## Full T4 run — superseding computational result
+
+The notebook was rerun using the official full profile: 18 development wings, three held-out cycles (14, 19, 21), six scored wings, seed 42, neural width 48. Validation cycle 13 selected 270 no-history epochs and 330 history epochs. All code ran through the final figure without error outputs. The supplied seed anchor is 1.0019, not a fresh seed study.
+
+History gain was 0.0003 ± 0.0002 on the champion and -0.0532 ± 0.0295 on the neural field, both below the floor. Mean time asymmetry was -0.1020 versus null mean -0.1265 and SD 0.5388, with zero of six wings outside the two-SD band (48 null draws and six triggering simulations). Self-inclusion produced a 62.9328-nat apparent gain; mean offspring scale 0.8310 stayed far below the leak cap of 50. These full-profile numbers supersede the CPU values below for the main analysis, while the student's CPU reflections remain a historical record.
+
+Equal pair counts was confirmed. Neither the roughly 2-nat classical gain nor a resolvably larger classical benefit was established. The 20-nat leak guess underestimated its size. The full profile still uses only three development folds; no detection does not prove that the Sun has no memory. The published notebook includes a full interpretation, actual generation discrepancies and deferred measurements.
+
+## Earlier CPU results — historical assistant analysis for student review
 
 Colab completed all 81 code cells without error outputs on the CPU taste profile: four northern wings, folds 18 and 19, seed 42, and 55 epochs for each neural arm chosen on validation cycle 13. Outputs and figures are preserved in the submitted notebook.
 
